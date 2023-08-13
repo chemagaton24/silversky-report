@@ -1,9 +1,9 @@
 <?php
 include './pdfgenerator/report-helper.php';
 include './pdfgenerator/report-values.php';
-// include './pdfgenerator/report-generate-overall-cyber-maturity.php';
-// include './pdfgenerator/report-generate-maturity-by-domain.php';
-// include './pdfgenerator/report-generate-maturity-by-industry-comparison.php';
+include './pdfgenerator/report-generate-overall-cyber-maturity.php';
+include './pdfgenerator/report-generate-maturity-by-domain.php';
+include './pdfgenerator/report-generate-maturity-by-industry-comparison.php';
 require_once './pdfgenerator/dompdf/vendor/autoload.php';
 
 ob_start();

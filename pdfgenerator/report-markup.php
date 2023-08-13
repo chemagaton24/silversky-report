@@ -459,6 +459,7 @@
 		</li>
 		<li>
 			<b>Summary of recommended measures/countermeasures</b>
+			<div class="page__break"></div>
 			<ol>
 				<li>
 					<b>Maturity Improvement Areas</b>
@@ -474,48 +475,17 @@
 							</tr>
 						</thead>
 						<tbody>
+							<?php $count = 1; ?>
+							<?php foreach ($maturity_imporvement_areas as $key => $area): ?>
+							<?php if(to_whole_num($area) <= 25): ?>
 							<tr>
-								<td>1</td>
-								<td>Threat and Vulnerability Detection</td>
-								<td><p>Threat and vulnerability detection processes such as vulnerability scanning, penetration testing, email security and end point detection controls are essential components of a comprehensive cybersecurity program because they help to identify and mitigate potential security risks before they can be exploited by attackers. This early detection can help organizations respond quickly and prevent damage or loss of a potential cyber threat. Threat and vulnerability detection can help identify and protect critical assets, such as customer data or intellectual property, from cyber-attacks. This protection is particularly important for organizations that rely heavily on their reputation and brand.</p></td>
+								<td><?php echo $count ?></td>
+								<td><?php echo $key ?></td>
+								<td><?php echo $why_is_it_important[$key] ?></td>
 							</tr>
-							<tr>
-								<td>2</td>
-								<td>Event Logging/Detection</td>
-								<td><p>Event logging and detection play critical roles in a security program by providing valuable information that can help prevent, detect, and respond to security incidents. Event logging involves the collection of data on activities occurring within a system or network. The ability to detect events across critical system components like perimeter activity, email activity, endpoint activity and user activity are critical for the ability to reconstruct what happened during a security incident.</p></td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Training/Culture</td>
-								<td><p>Human error is still a leading cause of security breaches within most organizations. While technology plays a crucial role in cybersecurity, people are still a critical part of the equation. Employees who are unaware of cybersecurity best practices or who fall for phishing scams can unintentionally compromise their organization's security. Regular security training helps employees understand the importance of cybersecurity and how to protect against threats. In addition, regular phishing testing helps employees recognize the signs of a phishing attack and respond appropriately before they are faced with the real scenario.</p></td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>Monitoring and Analysis</td>
-								<td><p>Monitoring and analysis are critical components of any comprehensive cybersecurity program because they help to detect and review potential security threats in a timely manner. The Monitoring and analysis function provides continuous review of network activity, system logs, and other sources of information to detect any signs of suspicious or malicious activity. By detecting security threats early, organizations can take immediate action to limit the damage of the potential threat and limit it’s impact to the organization. By monitoring and performing analysis of network traffic, system logs, and other data sources, organizations can identify vulnerabilities, understand attack patterns, and make informed decisions about how to improve their security defences.</p></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>Response Testing</td>
-								<td><p>Testing your incident response plan is critical for a cyber program because it helps to identify any weaknesses or gaps in your plan before an actual cyber attack occurs. By simulating different types of cyber attacks and scenarios, you can evaluate the effectiveness of your incident response plan and ensure that it is comprehensive and well-coordinated.</p></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>Threat Intel and Information</td>
-								<td>
-									<p>Threat intelligence and information plays a crucial role in a security program because it provides valuable information and context about potential threats and adversaries that can be used to improve the organization's security posture.<p><br/>
-									<p>By collecting and analysing threat intelligence, security teams can gain insights into the tactics, techniques, and procedures (TTPs) used by cybercriminals, nation-state actors, hacktivists, and other threat actors. This information can be used to identify potential vulnerabilities in the organization's infrastructure, applications, and systems, and to develop effective countermeasures to prevent or mitigate attacks.</p>
-								</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>Threat and Vulnerability Detection</td>
-								<td>
-									<p>Silversky can help you through performing regular internal and external vulnerability scans and annual penetration testing of your organization. These services are critical steps in maintaining a strong security posture and identifying potential vulnerabilities that can be exploited by cybercriminals.</p>
-									<p>Silversky can assist with it’s SilverSky Insight service that t provides vulnerability assessment tools and performance of regular scans to identify and prioritize vulnerabilities in the organization's network, systems, and applications.</p>
-									<p>SilverSky’s Continuous Validation services can also assist you to enhance maturity of this control by performing deep-level testing combining multiple attack vectors to confirm actual rather than theoretical exploitability of vulnerabilities and misconfigurations present on external devices and critical business systems</p>
-								</td>
-							</tr>
+							<?php $count++ ?>
+							<?php endif ?>
+							<?php endforeach ?>
 						</tbody>
 					</table>
 					<br/>
@@ -533,40 +503,17 @@
 							</tr>
 						</thead>
 						<tbody>
+						<?php $count = 1; ?>
+							<?php foreach ($maturity_imporvement_areas as $key => $area): ?>
+							<?php if(to_whole_num($area) <= 25): ?>
 							<tr>
-								<td>1</td>
-								<td>Threat and Vulnerability Detection</td>
-								<td>
-									<p>Silversky can help you through performing regular internal and external vulnerability scans and annual penetration testing of your organization. These services are critical steps in maintaining a strong security posture and identifying potential vulnerabilities that can be exploited by cybercriminals.</p>
-									<p>Silversky can assist with it’s SilverSky Insight service that t provides vulnerability assessment tools and performance of regular scans to identify and prioritize vulnerabilities in the organization's network, systems, and applications.</p>
-									<p>SilverSky’s Continuous Validation services can also assist you to enhance maturity of this control by performing deep-level testing combining multiple attack vectors to confirm actual rather than theoretical exploitability of vulnerabilities and misconfigurations present on external devices and critical business systems</p>
-								</td>
+								<td><?php echo $count ?></td>
+								<td><?php echo $key ?></td>
+								<td><?php echo $how_can_we_help[$key] ?></td>
 							</tr>
-							<tr>
-								<td>2</td>
-								<td>Event Logging/Detection</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Training/Culture</td>
-								<td><p>Silversky's exceptional security awareness curriculum equips users with a deep understanding of the different social engineering strategies that hackers use to compromise an organization's security. By training employees on the latest tactics and techniques, Silversky ensures that your organization's "human firewall" is strong and resilient. Through regular testing, Silversky's training program helps employees develop better practices to identify and respond to social engineering attacks, including phishing. Furthermore, holding employees accountable for security training is critical for creating a culture of security within the organization. When management sets high standards for security, employees are more likely to embody those standards, leading to a more secure environment. Protect your organization from cyber threats today with Silversky's remarkable security awareness curriculum.</p></td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>Monitoring and Analysis</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>Response Testing</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>Threat Intel and Information</td>
-								<td></td>
-							</tr>
+							<?php $count++ ?>
+							<?php endif ?>
+							<?php endforeach ?>
 						</tbody>
 					</table>
 					<br/>
