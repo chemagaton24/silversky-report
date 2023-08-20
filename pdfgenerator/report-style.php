@@ -39,6 +39,15 @@ ol ul > li {
 ol > li > b {
 	color: #263C91;
 }
+.footer {
+	position: fixed; 
+	bottom: 0px; 
+	left: 0px; 
+	width: 100%;
+	color: #939393;
+	text-align: center;
+	font-size: 14px;
+}
 .page__break { page-break-before: always; }
 .report__main {
 	font-family: Arial, Helvetica, sans-serif;
@@ -46,8 +55,16 @@ ol > li > b {
 }
 .report__intro {
 	position: absolute;
+	left: 50%;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: translate(-50%, -50%);
+}
+.report__intro-logo {
+	position: absolute;
+	left: 50%;
+	top: -100px;
+	transform: translate(-50%, -100%);
+	width: 180px;
 }
 .report__intro-heading {
 	font-size: 58px;

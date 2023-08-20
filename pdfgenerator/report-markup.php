@@ -1,6 +1,9 @@
 <?php include './pdfgenerator/report-style.php'; ?>
-<div class="report__main">
+<body>
+<footer class="footer">SilverSky Proprietary and Confidential</footer>
+<main class="report__main">
 	<div class="report__intro">
+		<img src="./pdfgenerator/assets/logo.png" class="report__intro-logo" />
 		<div class="report__intro-subheading">EXECUTIVE REPORT</div>
 		<div class="report__intro-heading">
 			CYBERSECURITY<br/>
@@ -202,10 +205,10 @@
 							
 						</tbody>
 					</table>
-					<br />
-					<br />
-					<img src="./pdfgenerator/charts/maturity-by-domain.png" />
 					<div class="page__break"></div>
+					<img src="./pdfgenerator/charts/maturity-by-domain.png" />
+					<br />
+					<br />
 				</li>
 				<li>
 					<b>Maturity by Industry Comparison</b>
@@ -545,4 +548,5 @@
 		<li>Analysis</li>
 		<li>Data Security</li>
 	</ol>
-</div>
+</main>
+</body>
